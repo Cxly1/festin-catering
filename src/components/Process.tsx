@@ -78,7 +78,7 @@ export default function Process() {
 
         <div ref={containerRef} className="relative">
           {/* Animated vertical line */}
-          <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-[2px] bg-border md:-translate-x-1/2">
+          <div className="absolute left-[40px] md:left-1/2 top-0 bottom-0 w-[2px] bg-border -translate-x-1/2">
             <motion.div
               className="w-full bg-gradient-to-b from-primary to-accent"
               style={{ height: lineHeight }}
@@ -105,7 +105,7 @@ export default function Process() {
               >
                 {/* Content card */}
                 <div
-                  className={`flex-1 ml-20 md:ml-0 ${
+                  className={`flex-1 ml-24 md:ml-0 ${
                     i % 2 === 0 ? "md:text-right md:pr-16" : "md:pl-16"
                   }`}
                 >
@@ -139,7 +139,7 @@ export default function Process() {
                     type: "spring",
                     stiffness: 200,
                   }}
-                  className="absolute left-8 md:left-1/2 md:-translate-x-1/2 z-10 w-16 h-16 rounded-full bg-background border-2 border-primary flex items-center justify-center"
+                  className="absolute left-[40px] md:left-1/2 -translate-x-1/2 z-10 w-16 h-16 rounded-full bg-background border-2 border-primary flex items-center justify-center"
                 >
                   <span className="text-primary font-bold text-lg font-[family-name:var(--font-playfair)]">
                     {step.number}
